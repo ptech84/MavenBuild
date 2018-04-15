@@ -2,15 +2,17 @@ package com.freecrm.testcases;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
+import com.freecrm.Pages.ContactsPage;
 import com.freecrm.Pages.HomePage;
 import com.freecrm.Pages.LoginPage;
 import com.freecrm.TestBase.TestBase;
@@ -19,16 +21,17 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class LoginTest extends TestBase{
+public class ContactsTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
+	ContactsPage contactsPage;
 	ExtentReports extent;
 	ExtentTest extentTest;
-	Logger log = Logger.getLogger(LoginTest.class);
+	Logger log = Logger.getLogger(ContactsTest.class);
 
 	
 	
-	public LoginTest(){
+	public ContactsTest(){
 		super();
 	}
 	
@@ -53,26 +56,89 @@ public class LoginTest extends TestBase{
 		Initialization();
 		loginPage = new LoginPage();
 		homePage = new HomePage();
+		contactsPage = new ContactsPage();
 	}
 	
-	@Test(invocationCount=1, groups="login", priority=3)
-	public void Login() throws InterruptedException{
-		extentTest = extent.startTest("Login");
-		log.info("******************Login successfully to FREECRM application***************************");
-	homePage = loginPage.LoginToFreeCRM(prop.getProperty("username"), prop.getProperty("password"));
-	Thread.sleep(5000);
-	}
 	
-	@Test(priority=2, groups="title")
-	public void verifyHomePageTitle() throws InterruptedException{
+	@Test(priority=1, groups="Click on Contacts", enabled=true)
+	public void clickOnNewContacts(){
+		extentTest = extent.startTest("addNewContacts");
 		homePage = loginPage.LoginToFreeCRM(prop.getProperty("username"), prop.getProperty("password"));
-		Thread.sleep(5000);
-		extentTest = extent.startTest("verifyHomePageTitle");
-		log.info("*******************verifying page title of FreeCRM***************************");
-		String title = loginPage.getPageTitle();
-		Assert.assertEquals(title, "CRMPRO");
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		homePage.clickOnContactsTab();
 	}
 	
+	@Parameters({"FirstName", "SurName"})
+	@Test(priority=2, groups="add new contacts", enabled =true)
+	public void addNewContacts(String SurName, String FirstName){
+		extentTest = extent.startTest("addNewContacts");
+		homePage = loginPage.LoginToFreeCRM(prop.getProperty("username"), prop.getProperty("password"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		homePage.clickOnContactsTab();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		contactsPage.addNewContactDetails(FirstName, SurName);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	@Test(dataProvider="getTestData", priority=3, groups="add more new contacts")
+	public void addMoreNewContacts(String FirstName, String surName, String MiddleName){
+		extentTest = extent.startTest("addMoreNewContacts");
+		homePage = loginPage.LoginToFreeCRM(prop.getProperty("username"), prop.getProperty("password"));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		homePage.clickOnContactsTab();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		contactsPage.addMoreNewContactDetails(FirstName, surName, MiddleName);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@DataProvider
+	  public Object[][] getTestData(){
+		  Object[][] data = TestUtil.getTestData("Sheet1");
+		  return data;
+		  
+	  }
+
 	
 	@AfterMethod
 public void tearDown(ITestResult result) throws IOException{
@@ -96,5 +162,6 @@ public void tearDown(ITestResult result) throws IOException{
 		driver.quit();
 	}
 	
+
 
 }
