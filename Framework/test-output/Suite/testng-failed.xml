@@ -13,7 +13,7 @@
           <include name="tearDown"/>
           <include name="endReport"/>
           <include name="Setup"/>
-          <include name="addMoreNewContacts"/>
+          <include name="addMoreNewContacts" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.freecrm.testcases.ContactsTest -->
     </classes>

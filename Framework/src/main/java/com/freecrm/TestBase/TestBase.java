@@ -14,7 +14,6 @@ import org.testng.ITestResult;
 import org.testng.log4testng.Logger;
 
 import com.freecrm.Utilities.TestUtil;
-import com.freecrm.testcases.LoginTest;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -28,7 +27,7 @@ public class TestBase {
 	
 	
 	public TestBase(){
-		
+				
 		try {
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/freecrm/config/properties/config.properties");
@@ -44,6 +43,7 @@ public class TestBase {
 	}
 	
 	public static void Initialization(){
+		
 		String browserName = prop.getProperty("browser");
 		if(browserName.equals("ie")){
 			System.setProperty("webdriver.ie.driver", "C:/Selenium/BrowserDrivers/IEDriverServer.exe");

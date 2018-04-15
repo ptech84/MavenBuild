@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="FirstName" value="Praveen"/>
+  <parameter name="SurName" value="Naidu"/>
+  <test name="ContactsTest(failed)">
+    <parameter name="FirstName" value="Praveen"/>
+    <parameter name="SurName" value="Naidu"/>
     <classes>
       <class name="com.freecrm.testcases.ContactsTest">
         <methods>
           <include name="StartExtent"/>
+          <include name="tearDown"/>
           <include name="endReport"/>
-          <include name="addMoreNewContacts"/>
+          <include name="Setup"/>
+          <include name="addMoreNewContacts" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.freecrm.testcases.ContactsTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ContactsTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

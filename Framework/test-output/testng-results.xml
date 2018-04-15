@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="204225" started-at="2018-04-15T07:42:59Z" finished-at="2018-04-15T07:46:24Z">
+  <suite name="Suite" duration-ms="199552" started-at="2018-04-15T14:18:07Z" finished-at="2018-04-15T14:21:26Z">
     <groups>
       <group name="add more new contacts">
         <method signature="ContactsTest.addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" class="com.freecrm.testcases.ContactsTest"/>
@@ -14,21 +14,21 @@
         <method signature="ContactsTest.addNewContacts(java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addNewContacts" class="com.freecrm.testcases.ContactsTest"/>
       </group> <!-- add new contacts -->
     </groups>
-    <test name="ContactsTest" duration-ms="204225" started-at="2018-04-15T07:42:59Z" finished-at="2018-04-15T07:46:24Z">
+    <test name="ContactsTest" duration-ms="199552" started-at="2018-04-15T14:18:07Z" finished-at="2018-04-15T14:21:26Z">
       <class name="com.freecrm.testcases.ContactsTest">
-        <test-method status="PASS" signature="StartExtent()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="StartExtent" is-config="true" duration-ms="610" started-at="2018-04-15T13:12:59Z" finished-at="2018-04-15T13:13:00Z">
+        <test-method status="PASS" signature="StartExtent()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="StartExtent" is-config="true" duration-ms="405" started-at="2018-04-15T19:48:07Z" finished-at="2018-04-15T19:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartExtent -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="22657" started-at="2018-04-15T13:13:00Z" finished-at="2018-04-15T13:13:23Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="21150" started-at="2018-04-15T19:48:07Z" finished-at="2018-04-15T19:48:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="clickOnNewContacts()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="clickOnNewContacts" duration-ms="13827" started-at="2018-04-15T13:13:23Z" finished-at="2018-04-15T13:13:36Z">
+        <test-method status="PASS" signature="clickOnNewContacts()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="clickOnNewContacts" duration-ms="15485" started-at="2018-04-15T19:48:28Z" finished-at="2018-04-15T19:48:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnNewContacts -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1272" started-at="2018-04-15T13:13:36Z" finished-at="2018-04-15T13:13:38Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1313" started-at="2018-04-15T19:48:44Z" finished-at="2018-04-15T19:48:45Z">
           <params>
             <param index="0">
               <value>
@@ -39,11 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="15347" started-at="2018-04-15T13:13:38Z" finished-at="2018-04-15T13:13:53Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="14639" started-at="2018-04-15T19:48:45Z" finished-at="2018-04-15T19:49:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="addNewContacts(java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addNewContacts" duration-ms="24125" started-at="2018-04-15T13:13:53Z" finished-at="2018-04-15T13:14:17Z">
+        <test-method status="PASS" signature="addNewContacts(java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addNewContacts" duration-ms="24312" started-at="2018-04-15T19:49:00Z" finished-at="2018-04-15T19:49:24Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewContacts -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1174" started-at="2018-04-15T13:14:17Z" finished-at="2018-04-15T13:14:18Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1224" started-at="2018-04-15T19:49:24Z" finished-at="2018-04-15T19:49:25Z">
           <params>
             <param index="0">
               <value>
@@ -70,11 +70,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="15472" started-at="2018-04-15T13:14:19Z" finished-at="2018-04-15T13:14:34Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="14007" started-at="2018-04-15T19:49:26Z" finished-at="2018-04-15T19:49:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" duration-ms="23496" started-at="2018-04-15T13:14:34Z" data-provider="getTestData" finished-at="2018-04-15T13:14:58Z">
+        <test-method status="PASS" signature="addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" duration-ms="24263" started-at="2018-04-15T19:49:40Z" data-provider="getTestData" finished-at="2018-04-15T19:50:04Z">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMoreNewContacts -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1345" started-at="2018-04-15T13:14:58Z" finished-at="2018-04-15T13:14:59Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1172" started-at="2018-04-15T19:50:04Z" finished-at="2018-04-15T19:50:05Z">
           <params>
             <param index="0">
               <value>
@@ -106,11 +106,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="16931" started-at="2018-04-15T13:14:59Z" finished-at="2018-04-15T13:15:16Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="23748" started-at="2018-04-15T19:50:05Z" finished-at="2018-04-15T19:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" duration-ms="23775" started-at="2018-04-15T13:15:16Z" data-provider="getTestData" finished-at="2018-04-15T13:15:40Z">
+        <test-method status="FAIL" signature="addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" duration-ms="13075" started-at="2018-04-15T19:50:29Z" data-provider="getTestData" finished-at="2018-04-15T19:50:42Z">
           <params>
             <param index="0">
               <value>
@@ -128,25 +128,88 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'BLR1-LP34YG622', ip: '192.168.1.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 1548, moz:profile: C:\Users\e3009192\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6d6193e5-66a0-4a3e-bc8b-96bf134adbe6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: 
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'BLR1-LP34YG622', ip: '192.168.1.9', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 54.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:processID: 1548, moz:profile: C:\Users\e3009192\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 6d6193e5-66a0-4a3e-bc8b-96bf134adbe6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at com.freecrm.Pages.HomePage.clickOnContactsTab(HomePage.java:36)
+	at com.freecrm.testcases.ContactsTest.addMoreNewContacts(ContactsTest.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMoreNewContacts -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1175" started-at="2018-04-15T13:15:40Z" finished-at="2018-04-15T13:15:41Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1576" started-at="2018-04-15T19:50:42Z" finished-at="2018-04-15T19:50:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addMoreNewContacts status=SUCCESS method=ContactsTest.addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e] output={null}]]]>
+                <![CDATA[[TestResult name=addMoreNewContacts status=FAILURE method=ContactsTest.addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="16848" started-at="2018-04-15T13:15:41Z" finished-at="2018-04-15T13:15:58Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="Setup" is-config="true" duration-ms="16410" started-at="2018-04-15T19:50:44Z" finished-at="2018-04-15T19:51:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" duration-ms="23743" started-at="2018-04-15T13:15:58Z" data-provider="getTestData" finished-at="2018-04-15T13:16:22Z">
+        <test-method status="PASS" signature="addMoreNewContacts(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="addMoreNewContacts" duration-ms="24223" started-at="2018-04-15T19:51:00Z" data-provider="getTestData" finished-at="2018-04-15T19:51:24Z">
           <params>
             <param index="0">
               <value>
@@ -167,7 +230,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMoreNewContacts -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1369" started-at="2018-04-15T13:16:22Z" finished-at="2018-04-15T13:16:23Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="tearDown" is-config="true" duration-ms="1326" started-at="2018-04-15T19:51:24Z" finished-at="2018-04-15T19:51:26Z">
           <params>
             <param index="0">
               <value>
@@ -178,7 +241,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="endReport" is-config="true" duration-ms="388" started-at="2018-04-15T13:16:23Z" finished-at="2018-04-15T13:16:24Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.freecrm.testcases.ContactsTest@56235b8e]" name="endReport" is-config="true" duration-ms="452" started-at="2018-04-15T19:51:26Z" finished-at="2018-04-15T19:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
